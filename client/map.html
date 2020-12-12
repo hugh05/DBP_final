@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+
+</head>
+<body>
+    <header>
+        <div>
+            <input type="checkbox" id="menuicon">
+            <label for ="menuicon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div class="sidebar">
+                <h1 id="sidetitle">폐건전지 맵</h1>
+                <p id="sidesub">폐건전지,폐형광등 수거함 지도</p>
+                <p style="color: white;margin-left: 30px;margin-top: 300px;" >___________________________________</p>
+                <p style="color: white;margin-left: 30px;font-size: 18px;font-weight: bold;">폐건전지 분리수거 필요성</p>
+                <p style="color: white;margin-left: 30px;margin-top: 100px;font-size: 14px;">개발자 : 3조</p>
+            </div>
+        </div>
+        <div class="logo">
+            <span>폐건전지 맵</span>
+        </div>
+    </header>
+<div id="map" style="width:100%;height:90vh;"></div>
+
+
+<script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=0e9c1a6ee23c4d9bdd044d8a070aaeaf"></script>
+<script>
+var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+    mapOption = { 
+        center: new kakao.maps.LatLng(37.59153834188983, 127.02203416633242 ), // 지도의 중심좌표
+                                            //중심좌표 성신여대로 바꿈
+        level: 5 // 지도의 확대 레벨
+    };
+
+var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+
+  
+</script>
+</body>
+</html>

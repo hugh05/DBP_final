@@ -72,7 +72,7 @@ clusterer.addMarkers(markers);
         <p style="color: white;margin-left: 30px;margin-top: 300px;" >___________________________________</p>
         <p style="color: white;margin-left: 30px;font-size: 18px;font-weight: bold;">폐건전지 분리수거 필요성</p>
         <p id="sidesub">건전지는 망간, 아연 등의 오염물질이 함유되어 있어 일반쓰레기와 함께 매립되면 알칼리 침출수, 수산화니켈 등에 의해 토양이 오염 될 수 있고, 소각 시 망간, 아연 등을 함유한 배기가스에 의해 대기가 오염될 수 있습니다.</p>
-        <p style="color: white;margin-left: 30px;margin-top: 100px;font-size: 14px;">개발자 : 3조</p>
+        <p style="color: white;margin-left: 30px;margin-top: 80px;font-size: 14px;">개발자 : 3조</p>
     </div>
 </body>
 </html>

@@ -14,7 +14,7 @@
     </header>
 <div id="map" style="width:100%;height:100vh;">
 
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b664a5773695eefacaa985bf4cfae966"></script>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b664a5773695eefacaa985bf4cfae966"></script>
     <script>
     var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
         mapOption = { 
@@ -25,7 +25,7 @@
     var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
 
     <?php
-    require_once($_SERVER['DOCUMENT_ROOT'].'/index1.php');
+    require_once($_SERVER['DOCUMENT_ROOT'].'/db.php');
 
     mysqli_set_charset($con, 'utf8');
     $res = mysqli_query($con, 'select Latitude, Longitude from recycle limit 500');
@@ -58,10 +58,11 @@
     <div class="sidebar">
         <h1 id="sidetitle">폐건전지 맵</h1>
         <p id="sidesub">폐건전지,폐형광등 수거함 지도</p>
-        <p style="color: white;margin-left: 30px;margin-top: 300px;" >___________________________________</p>
+        <p style="color: white;margin-left: 30px;margin-top: 250px;" >___________________________________</p>
         <p style="color: white;margin-left: 30px;font-size: 18px;font-weight: bold;">폐건전지 분리수거 필요성</p>
         <p id="sidesub">건전지는 망간, 아연 등의 오염물질이 함유되어 있어 일반쓰레기와 함께 매립되면 알칼리 침출수, 수산화니켈 등에 의해 토양이 오염 될 수 있고, 소각 시 망간, 아연 등을 함유한 배기가스에 의해 대기가 오염될 수 있습니다.</p>
-        <p style="color: white;margin-left: 30px;margin-top: 100px;font-size: 14px;">개발자 : 3조</p>
+        <p style="color: white;margin-left: 30px;margin-right: 30px;font-size: 14px;">*충전용 보조배터리도 폐건전지 수거함에 넣어주세요*</p>
+        <p style="color: white;margin-left: 30px;margin-top: 60px;font-size: 14px;">개발자 : 3조</p>
     </div>
 </body>
 </html>
